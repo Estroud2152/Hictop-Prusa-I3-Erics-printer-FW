@@ -86,11 +86,11 @@
 #endif
 
 // Define this to set a custom name for your generic Mendel,
-// #define CUSTOM_MENDEL_NAME "This Mendel"
+ #define CUSTOM_MENDEL_NAME "Erics Hictop"
 
 // Define this to set a unique identifier for this printer, (Used by some programs to differentiate between machines)
 // You can use an online service to generate a random UUID. (eg http://www.uuidgenerator.net/version4)
-// #define MACHINE_UUID "00000000-0000-0000-0000-000000000000"
+#define MACHINE_UUID "1c17965d-1dd6-4e5c-8d1a-6b5e321745a1"
 
 // This defines the number of extruders
 #define EXTRUDERS 1
@@ -409,8 +409,8 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 
     // set the rectangle in which to probe
     #define LEFT_PROBE_BED_POSITION 3
-    #define RIGHT_PROBE_BED_POSITION 150
-    #define BACK_PROBE_BED_POSITION 212
+    #define RIGHT_PROBE_BED_POSITION 175
+    #define BACK_PROBE_BED_POSITION 210
     #define FRONT_PROBE_BED_POSITION 3
 
      // set the number of grid points per dimension
@@ -435,7 +435,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
   // these are the offsets to the probe relative to the extruder tip (Hotend - Probe)
   #define X_PROBE_OFFSET_FROM_EXTRUDER +10
   #define Y_PROBE_OFFSET_FROM_EXTRUDER +53
-  #define Z_PROBE_OFFSET_FROM_EXTRUDER -0.75
+  #define Z_PROBE_OFFSET_FROM_EXTRUDER 0.55
 
   #define Z_RAISE_BEFORE_HOMING 4       // (in mm) Raise Z before homing (G28) for Probe Clearance. Vera added text here
                                         // Be sure you have this distance over your Z_MAX_POS in case
@@ -458,7 +458,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 //If you have enabled the Bed Auto Leveling and are using the same Z Probe for Z Homing,
 //it is highly recommended you let this Z_SAFE_HOMING enabled!!!
 
-  #define Z_SAFE_HOMING   // This feature is meant to avoid Z homing with probe outside the bed area.
+//  #define Z_SAFE_HOMING   // This feature is meant to avoid Z homing with probe outside the bed area.
                           // When defined, it will:
                           // - Allow Z homing only after X and Y homing AND stepper drivers still enabled
                           // - If stepper drivers timeout, it will need X and Y homing again before Z homing
